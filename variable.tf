@@ -33,7 +33,7 @@ variable "private_subnets" {
 variable "key_pair_name" {
   description = "The name of the existing key pair in AWS"
   type        = string
-  default     = "terrafprm"
+  default     = "terraform"
 }
 
 variable "instance_type" {
