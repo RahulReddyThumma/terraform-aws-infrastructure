@@ -8,6 +8,12 @@ variable "vpc_cidr" {
   default     = "10.0.0.0/16"
 }
 
+variable "public_subnet_az" {
+  description = "The availability zone for the public subnet where the EC2 instance will be created"
+  type        = string
+  default     = "us-east-1a"
+}
+
 variable "public_subnets" {
   description = "A map of public subnets inside the VPC"
   default = {
