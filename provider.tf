@@ -7,6 +7,5 @@ terraform {
     bucket = "my-terraform-state-bucket-rahulreddythumma"
     key    = "terraform.tfstate"
     region = "us-east-1"
-    dynamodb_table = "my-terraform-state-lock"
   }
 }
