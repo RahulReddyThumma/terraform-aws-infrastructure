@@ -24,6 +24,12 @@ variable "private_subnets" {
   }
 }
 
+variable "key_pair_name" {
+  description = "The name of the existing key pair in AWS"
+  type        = string
+  default     = "terrafprm"
+}
+
 variable "instance_type" {
   description = "Instance type for the EC2 instance"
   default     = "t2.micro"
